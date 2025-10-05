@@ -13,10 +13,11 @@ public class _main_ {
 	
 	
 	public static void main(String[]args) throws InterruptedException {																																																																																																	//created by dwayne derigay //along with my groups :3 //ict-1n2 //sy.25-26 philtek
-		//menu.loading();
+		menu.loading();
 		menu.clear();
 		menu.main();
 
 	}
 }
+
 
