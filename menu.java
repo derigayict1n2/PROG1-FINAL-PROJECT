@@ -16,6 +16,7 @@ public class menu {
     static int option;
 	
 	public static void main() throws InterruptedException {
+		clear();
 		System.out.println(reset);
 		System.out.println(greentext+blackbg);
 		System.out.println(
@@ -611,6 +612,7 @@ public class menu {
         }
 	}
 }
+
 
 
 
