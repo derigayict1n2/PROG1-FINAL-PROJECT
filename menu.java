@@ -2,6 +2,7 @@ package PROJECT;
 import java.util.*;
 
 public class menu {
+	clear();
 	static Scanner input = new Scanner(System.in);
 	public static final String reset = "\u001B[0m";
 	public static final String whitebg = "\u001B[47m";
@@ -610,5 +611,6 @@ public class menu {
         }
 	}
 }
+
 
 
