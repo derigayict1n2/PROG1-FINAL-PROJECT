@@ -80,10 +80,10 @@ public class oddoreven {
 		option = (int) getui.getUI1();
 		switch (option) {
 		case 1:
-			menu.menu();
+			menu.menus();
 			break;
 		case 2:
-			exit.exit();
+			exit.exits();
 			break;
 		case 3:
 			realoddeven();
@@ -300,17 +300,16 @@ public class oddoreven {
 	
 		switch (option) {
 		case 1:
-			menu.menu();
+			menu.menus();
 			break;
 		case 2:
-			exit.exit();
+			exit.exits();
 			break;
 		case 3:
 			oddeven();
 			break;
 		default:
-			menu.clear();
-			menu.waguri();
+			oddeven();
 			break;
 		}
 	}
