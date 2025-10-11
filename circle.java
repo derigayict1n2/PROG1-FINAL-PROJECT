@@ -78,10 +78,10 @@ public class circle {
 		
 		switch(option) {
 		case 1:
-			menu.menu();
+			menu.menus();
 			break;
 		case 2:
-			exit.exit();
+			exit.exits();
 			break;
 		case 3:
 			realareacircum();
@@ -152,8 +152,8 @@ public class circle {
 		
 		r = getui.getUI();
 		
-		result = 2*(Math.PI*r);
-		result2 = r*(result/2);
+		result = 2*Math.PI*r;
+		result2 = r*r*Math.PI;
 		
 		menu.clear();
 		System.out.println(
@@ -216,17 +216,16 @@ public class circle {
 		
 		switch(option) {
 		case 1:
-			menu.menu();
+			menu.menus();
 			break;
 		case 2:
-			exit.exit();
+			exit.exits();
 			break;
 		case 3:
 			areacircum();
 			break;
 		default:
-			menu.waguri();
+			areacircum();
 		}
 	}
 }
-
