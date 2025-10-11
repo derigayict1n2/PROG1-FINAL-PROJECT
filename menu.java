@@ -2,7 +2,6 @@ package PROJECT;
 import java.util.*;
 
 public class menu {
-	clear();
 	static Scanner input = new Scanner(System.in);
 	public static final String reset = "\u001B[0m";
 	public static final String whitebg = "\u001B[47m";
@@ -81,13 +80,13 @@ public class menu {
 			switch (option) {
 		
 				case 1:
-					menu();
+					menus();
 					break;
 				case 2:
 					about_us();
 					break;
 				case 3:
-					exit.exit();
+					exit.exits();
 					break;
 				default:
 					waguri();
@@ -95,7 +94,7 @@ public class menu {
 			}
 	}
 	
-	public static void menu() throws InterruptedException {
+	public static void menus() throws InterruptedException {
 		clear();
 		System.out.println(reset);
 		System.out.println(greentext+blackbg);
@@ -158,13 +157,13 @@ public class menu {
 		
 		switch(option) {
 		case 1:
-			calculator.calculator();
+			calculator.calculators();
 			break;
 		case 2:
 			oddoreven.oddeven();
 			break;
 		case 3:
-			conversion.conversion();
+			conversion.conversions();
 			break;
 		case 4:
 			circle.areacircum();
@@ -173,7 +172,7 @@ public class menu {
 			main();
 			break;
 		case 6:
-			exit.exit();
+			exit.exits();
 			break;
 		default:
 			waguri();
@@ -201,7 +200,8 @@ public class menu {
 				+"\t\t\t\t\t\t\t"+ "───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────																				\r\n"
 				+"\t\t\t\t\t\t\t"+ "───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────																				\r\n"
 				+"\t\t\t\t\t\t\t"+ "───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────																				\r\n"
-				+"\t\t\t\t\t\t\t"+ "																		SY.25-26																																						\r\n"
+				+"\t\t\t\t\t\t\t"+ "																																																										\r\n"
+				+"\t\t\t\t\t\t\t"+ "                                                                         SY.25-26                                                                          																			\r\n"
 				+"\t\t\t\t\t\t\t"+ "                                                         THIS IS GROUP 1 PROJECT FOR PROGRAMMING-1                                                         																				\r\n"
 				+"\t\t\t\t\t\t\t"+ "																																																										\r\n"
 				+"\t\t\t\t\t\t\t"+ "                         IT CONTAINS CALCULATOR, ODD/EVEN, CONVERSION OF MM, CM, AND M, A AND C OF A CIRCLE, AND AMONG OTHER STUFF                         																				\r\n"
@@ -245,7 +245,7 @@ public class menu {
 			main();
 			break;
 		case 2:
-			exit.exit();
+			exit.exits();
 			break;
 		default:
 			waguri();
@@ -292,7 +292,7 @@ public class menu {
 				+"\t\t\t\t\t\t\t\t\t\t"+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣷⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⢠⠏⣰⠋⠀⡼⠁⠀⠀⠀⢀⣤⣤⣤⣤⣤⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⢻⣿⣿⣿⣞⡣⣻⣿⣿⣿⣿⣷⣯⣫⣟⣿⣻⣟⣧⣻⣿⣷⣝⣿⣿⢟⣵⡾⠿⠷⠄⠀⠀⠴⢿⣿⣤⡀⠀⠀⠀⠀⠀⠀																																						\r\n"
 				+"\t\t\t\t\t\t\t\t\t\t"+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣹⣷⠏⣰⠃⠀⠜⠀⠀⠀⠀⠀⢰⣿⠁⠈⠉⠉⠙⠛⠛⠿⠷⢶⣶⣦⣤⣤⣤⣄⣀⠀⠀⠀⠀⠀⠀⡼⣠⠟⢈⡿⣿⣿⡷⣟⣿⣿⣿⣿⣿⣿⣿⣿⣯⡿⢎⡷⣹⢿⣿⣯⡷⣿⢸⣿⣄⣀⣀⡤⠀⢤⣀⡀⢈⣿⡇⠀⠀⠀⠀⠀⠀																																						\r\n"
 				+"\t\t\t\t\t\t\t\t\t\t"+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣾⣿⣠⡇⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠙⠻⣷⡄⠀⠀⠀⡾⢱⠏⢠⡟⢀⣸⣿⣿⣧⢿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⣟⣽⡫⣿⣿⢿⣿⣷⣝⣛⡻⣿⡇⠀⣸⣿⠿⠟⠛⠀⠀⠀⠀⠀⠀⠀																																						\r\n"
-				+"\t\t\t\t\t\t\t\t\t\t"+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣫⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⡆ WRONG INPUT  ⢸⣿⠀⠀⠘⢡⡏⢠⡟⢀⡾⠁⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⡶⣹⣾⣷⣿⣿⣿⣿⣿⡇⠹⢿⣶⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀																																							\r\n"
+				+"\t\t\t\t\t\t\t\t\t\t"+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣫⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⡆     WRONG INPUT    ⢸⣿⠀⠀⠘⢡⡏⢠⡟⢀⡾⠁⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⡶⣹⣾⣷⣿⣿⣿⣿⣿⡇⠹⢿⣶⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀																																							\r\n"
 				+"\t\t\t\t\t\t\t\t\t\t"+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣵⣿⣿⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠈⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⠃⠀⠀⠀⡾⢀⡞⠀⣼⠁⣴⢶⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣿⣿⣿⣟⣵⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀																																							\r\n"
 				+"\t\t\t\t\t\t\t\t\t\t"+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⡟⣿⣿⣿⣿⣿⡿⢎⣾⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠈⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴⡿⠃⠀⠀⠀⠀⠀⠾⠁⣸⢃⡾⠁⣾⡵⣿⣿⣿⣿⣿⣿⣿⣿⣿⢷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀																																							\r\n"
 				+"\t\t\t\t\t\t\t\t\t\t"+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣟⣽⣿⣿⣿⣿⣿⡿⣸⣿⣿⣿⣿⣿⢟⣧⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⠶⠾⠟⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢈⣉⣥⣴⣿⡟⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀																																						\r\n"
@@ -316,15 +316,15 @@ public class menu {
 				+"\t\t\t\t\t\t\t\t\t\t"+ "⠀⠀⠀⠈⠻⣿⣿⣿⣿⣿⣿⣿⢮⡷⣮⣭⣙⢿⣶⣿⠃⡱⢎⠷⣋⢾⣿⣍⣶⡗⢝⢿⣝⣿⣷⣶⣶⣆⠀⠀⠀⢸⡇⠀⠀⠀⠀⠀⣼⠃⠀⠀⠀⠀⠀⠀⣠⣴⣿⣿⣿⠟⠋⣠⣴⡿⣟⢿⡷⣿⢿⣿⣿⠢⣿⣿⣻⣿⣿⣿⣿⣿⣿⣿⡷⣟⢿⣿⣾⡷⣿⢿⣿⣿⣿⣻⢾⣿⣿⣿⣿⢿⣿⣿⣿⣿⣿⡵⣫⣾⡏																																					\r\n"
 				+"\t\t\t\t\t\t\t\t\t\t"+ "⠀⠀⠀⠀⠀⠙⢿⣿⣿⣿⣿⣿⣫⣝⣿⣿⣝⣳⣶⠠⡃⣕⢪⠛⡤⣣⣟⣯⢿⡇⢣⡙⢿⣯⡻⣿⣿⣿⣷⣄⠀⢸⡇⠀⠀⠀⠀⢰⡏⠀⠀⠀⠀⣠⣴⣿⣿⣿⡿⠛⣁⣴⢿⡟⣣⣛⣍⢻⣿⣯⣿⣝⣿⣟⢍⣿⡽⣯⣿⣿⣿⣿⣿⣿⣟⣯⣷⣿⣿⣿⣯⣻⣽⣿⡿⣽⣿⣿⣿⣿⡷⣿⣿⣿⣿⣿⣿⣟⣵⣿⠇																																					\r\n"
 				+"\t\t\t\t\t\t\t\t\t\t"+ "⠀⠀⠀⠀⠀⠀⠈⠻⣿⣿⣿⣿⡵⢾⣿⣿⣮⡷⣿⡴⣩⢎⡱⣋⣦⡱⢘⡞⣿⣇⡳⣝⠦⡙⢿⣾⢿⣿⣿⡻⣧⡈⣿⠀⠀⠀⢠⡿⠀⢀⣀⣤⣾⣿⣿⡿⠟⣉⣤⡾⢋⠵⣑⢎⡱⣉⢶⡿⢛⣷⣽⢮⡿⣿⣷⣹⣿⣷⣽⣿⣿⣿⣿⣿⣿⡷⣽⢾⣷⣼⣿⣿⢾⡿⣿⣾⣿⣿⣿⣿⣿⣽⣿⣿⣿⣿⣿⣯⢾⡟⠀																																					\r\n"
-				+"\t\t\t\t\t\t\t\t\t\t"+ " }─────────────────────────────────[1]─Return──────────────────────[2]─Exit─────────────────────────────────{																																					\r\n");
+				+"\t\t\t\t\t\t\t\t\t\t\t"+ " }───────────────────────────────────────────────[1]─Return──────────────────────[2]─Exit───────────────────────────────────────────────{																																					\r\n");
 		System.out.println(reset);
 		int option = (int) getui.getUI1();
 		switch (option) {
 		case 1:
-			menu();
+			menus();
 			break;
 		case 2:
-			exit.exit();
+			exit.exits();
 			break;
 		default:
 			clear();
@@ -612,7 +612,4 @@ public class menu {
         }
 	}
 }
-
-
-
 
